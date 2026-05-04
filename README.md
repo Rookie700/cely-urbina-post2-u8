@@ -1,1 +1,20 @@
-# Laboratorio: Aritm倀ica de Precisi Mtiple y BCD (Unidad 8 - Post 2)[cite: 4] 
+# Laboratorio: Aritm茅tica de Precisi贸n M煤ltiple y BCD (Unidad 8 - Post 2)[cite: 4]
+**Estudiante:** [Tu Apellido] - Ingenier铆a de Sistemas (UFPS)[cite: 4]
+
+## 1. Descripci贸n
+Este laboratorio implementa operaciones que superan la capacidad nativa de 16 bits y maneja aritm茅tica decimal corregida (BCD)[cite: 4].
+
+## 2. Checkpoints Implementados
+* **Aritm茅tica 32 bits:** Uso de `ADC` y `SBB` para propagar acarreos y pr茅stamos entre registros[cite: 4].
+* **Ajuste BCD:** Implementaci贸n de `DAA` y `DAS` para mantener la validez de los d铆gitos decimales (0-9) en cada nibble[cite: 4].
+* **Calculadora:** Conversi贸n de caracteres ASCII a binario para realizar `MUL` y `DIV`, con una subrutina para imprimir resultados de varios d铆gitos[cite: 4].
+
+## 3. Evidencias
+| Operaci贸n | Resultado Esperado | Captura |
+| :--- | :--- | :--- |
+| Suma 32 bits | 0003:0000h | `capturas/32bits.png` |
+| Suma BCD | 85 | `capturas/bcd.png` |
+| Multiplicaci贸n | 7 * 8 = 56 | `capturas/calc.png` |
+
+## 4. Conclusiones
+El uso de `ADC` y `SBB` es fundamental para el software que requiere alta precisi贸n en arquitecturas de bits limitados. El ajuste BCD facilita la interacci贸n humana al procesar datos financieros o contables directamente en base 10[cite: 4].
